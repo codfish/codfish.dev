@@ -1,7 +1,8 @@
 {
   "name": "codfish.io",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "Personal website.",
+  "private": true,
   "source": "src/index.html",
   "scripts": {
     "build": "parcel build",
