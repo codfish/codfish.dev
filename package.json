@@ -2,9 +2,9 @@
   "name": "codfish.io",
   "version": "1.0.0",
   "description": "Personal website.",
-  "main": "dist/index.html",
+  "source": "index.html",
   "scripts": {
-    "build": "parcel build index.html",
+    "build": "parcel index.html",
     "now-build": "npm run build && cp robots.txt favicon.ico ./dist",
     "dev": "parcel index.html",
     "lint:commits": "commitlint"
@@ -27,13 +27,16 @@
   },
   "homepage": "https://codfish.io",
   "devDependencies": {
-    "@commitlint/config-conventional": "^17.3.0",
-    "commitlint": "^17.3.0",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@parcel/transformer-stylus": "^2.8.3",
+    "commitlint": "^17.4.4",
     "normalize.css": "^8.0.1",
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^2.8.3",
     "stylus": "^0.59.0"
   },
   "commitlint": {
-    "extends": ["@commitlint/config-conventional"]
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
