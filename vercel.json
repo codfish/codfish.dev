@@ -9,5 +9,11 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/:path",
+      "destination": "https://codfi.sh/:path"
+    }
   ]
 }
